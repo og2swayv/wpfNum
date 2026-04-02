@@ -48,10 +48,11 @@
                     Margin="5"/>
 
             <Button x:Name="DivideButton"
-                    Content="/"
-                    Width="60"
-                    Height="35"
-                    Margin="5"/>
+        Content="/"
+        Width="60"
+        Height="35"
+        Margin="5"
+        Click="DivideButton_Click"/>
         </WrapPanel>
 
         <StackPanel Grid.Row="5">

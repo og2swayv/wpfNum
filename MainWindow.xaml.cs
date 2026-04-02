@@ -22,5 +22,19 @@ namespace WpfApp3
 
             return true;
         }
+
+        private void DivideButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (TryGetNumbers(out double a, out double b))
+            {
+                if (b == 0)
+                {
+                    ResultTextBlock.Text = "На ноль делить нельзя";
+                    return;
+                }
+
+                ResultTextBlock.Text = (a / b).ToString();
+            }
+        }
     }
 }
