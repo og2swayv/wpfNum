@@ -42,10 +42,11 @@
                     Margin="5"/>
 
             <Button x:Name="MultiplyButton"
-                    Content="*"
-                    Width="60"
-                    Height="35"
-                    Margin="5"/>
+        Content="*"
+        Width="60"
+        Height="35"
+        Margin="5"
+        Click="MultiplyButton_Click"/>
 
             <Button x:Name="DivideButton"
                     Content="/"
