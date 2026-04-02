@@ -30,5 +30,35 @@ namespace WpfApp3
                 ResultTextBlock.Text = (a + b).ToString();
             }
         }
+
+        private void SubtractButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (TryGetNumbers(out double a, out double b))
+            {
+                ResultTextBlock.Text = (a - b).ToString();
+            }
+        }
+
+        private void MultiplyButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (TryGetNumbers(out double a, out double b))
+            {
+                ResultTextBlock.Text = (a * b).ToString();
+            }
+        }
+
+        private void DivideButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (TryGetNumbers(out double a, out double b))
+            {
+                if (b == 0)
+                {
+                    ResultTextBlock.Text = "На ноль делить нельзя";
+                    return;
+                }
+
+                ResultTextBlock.Text = (a / b).ToString();
+            }
+        }
     }
 }

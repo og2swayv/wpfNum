@@ -30,29 +30,32 @@
 
         <WrapPanel Grid.Row="4" HorizontalAlignment="Center" Margin="0,0,0,15">
             <Button x:Name="AddButton"
-        Content="+"
-        Width="60"
-        Height="35"
-        Margin="5"
-        Click="AddButton_Click"/>
+                    Content="+"
+                    Width="60"
+                    Height="35"
+                    Margin="5"
+                    Click="AddButton_Click"/>
 
             <Button x:Name="SubtractButton"
                     Content="-"
                     Width="60"
                     Height="35"
-                    Margin="5"/>
+                    Margin="5"
+                    Click="SubtractButton_Click"/>
 
             <Button x:Name="MultiplyButton"
                     Content="*"
                     Width="60"
                     Height="35"
-                    Margin="5"/>
+                    Margin="5"
+                    Click="MultiplyButton_Click"/>
 
             <Button x:Name="DivideButton"
                     Content="/"
                     Width="60"
                     Height="35"
-                    Margin="5"/>
+                    Margin="5"
+                    Click="DivideButton_Click"/>
         </WrapPanel>
 
         <StackPanel Grid.Row="5">
