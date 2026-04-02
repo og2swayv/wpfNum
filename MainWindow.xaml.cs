@@ -22,5 +22,13 @@ namespace WpfApp3
 
             return true;
         }
+
+        private void SubtractButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (TryGetNumbers(out double a, out double b))
+            {
+                ResultTextBlock.Text = (a - b).ToString();
+            }
+        }
     }
 }

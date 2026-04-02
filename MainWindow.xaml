@@ -36,10 +36,11 @@
                     Margin="5"/>
 
             <Button x:Name="SubtractButton"
-                    Content="-"
-                    Width="60"
-                    Height="35"
-                    Margin="5"/>
+        Content="-"
+        Width="60"
+        Height="35"
+        Margin="5"
+        Click="SubtractButton_Click"/>
 
             <Button x:Name="MultiplyButton"
                     Content="*"
